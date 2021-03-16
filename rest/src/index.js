@@ -66,4 +66,6 @@ const helper_author_commits = (result) => {
 
 // Env and Port
 const PORT = process.env.PORT || 5000;
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`server up on Port: ${PORT}`);
+});
